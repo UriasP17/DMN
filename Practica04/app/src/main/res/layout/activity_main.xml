@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulario de preferencias"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecciona tu carrera"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modalidad preferida"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupModalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/rbPresencial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Presencial"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbVirtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Virtual" />
+
+            <RadioButton
+                android:id="@+id/rbHibrida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Híbrida" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Áreas de interés"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/cbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desarrollo Android" />
+
+        <CheckBox
+            android:id="@+id/cbWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desarrollo Web" />
+
+        <CheckBox
+            android:id="@+id/cbRedes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redes y servidores"
+            android:layout_marginBottom="20dp" />
+
+        <Switch
+            android:id="@+id/switchNotificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recibir notificaciones"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tvNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel de experiencia: 1"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="9"
+            android:progress="0"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnProcesar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Procesar formulario"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tvResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumen."
+            android:textSize="17sp"
+            android:padding="16dp"
+            android:background="#E3F2FD" />
+
+    </LinearLayout>
+</ScrollView>
